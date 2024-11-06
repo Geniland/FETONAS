@@ -26,6 +26,53 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link href="assets/css/theme.min.css" rel="stylesheet" />
     <link href="assets/css/user.min.css" rel="stylesheet" />
+    <style>
+      .telechargement {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+  
+      h1 {
+        color: #333;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+  
+      .download-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .download-container a {
+        margin: 10px 0;
+      }
+  
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+      }
+  
+      button:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+      }
+  
+      button:active {
+        background-color: #003d80;
+        transform: translateY(0);
+      }
+    </style>
   </head>
 
   <body>
@@ -94,6 +141,21 @@
               </div><!-- end of .container-->
             </section><!-- <section> close ============================-->
             <!-- ============================================-->
+
+           <div class="telechargement">
+            <div class="download-container">
+              <!-- Bouton de téléchargement -->
+              <a href="documents/DOCUMENT COMPLET.pdf" download="DOCUMENT COMPLET.pdf">
+                <button>Télécharger le fichier complet</button>
+              </a>
+              <a href="documents/histoire natation au togo.docx" download="histoire natation au togo.docx">
+                <button>Télécharger le fichier sur l'historique de FETONAS</button>
+              </a>
+              <a href="documents/LISTE DES CLUBS DE LA FEDERATION.docx" download="LISTE DES CLUBS DE LA FEDERATION.docx">
+                <button>Télécharger le fichier sur la liste des clubs</button>
+              </a>
+            </div>
+           </div>
 
             <!-- <section> contact begin ============================-->
             <section class="bg-dark overflow-hidden">

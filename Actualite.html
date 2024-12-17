@@ -26,11 +26,33 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
     <link href="assets/css/theme.min.css" rel="stylesheet" />
     <link href="assets/css/user.min.css" rel="stylesheet" />
+ 
     
   </head>
 
   <body>
     <style>
+       #btnRetourHaut {
+      position: fixed; /* Position fixe pour toujours rester visible */
+      bottom: 30px; /* Distance depuis le bas de la fenêtre */
+      right: 30px; /* Distance depuis le côté droit */
+      background-color: #007bff; /* Couleur de fond */
+      color: white; /* Couleur de la flèche */
+      border: none; /* Pas de bordure */
+      border-radius: 50%; /* Rend le bouton circulaire */
+      width: 50px; /* Largeur */
+      height: 50px; /* Hauteur */
+      font-size: 24px; /* Taille de la flèche */
+      text-align: center; /* Centre le contenu */
+      line-height: 50px; /* Aligne verticalement */
+      cursor: pointer; /* Curseur pointeur */
+      display: none; /* Caché par défaut */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease-in-out;
+    }
+    #btnRetourHaut:hover {
+      background-color: #0056b3; /* Changement de couleur au survol */
+    }
       .ph {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -82,6 +104,16 @@
         .gallery-item:hover {
             transform: scale(1.05);
         }
+
+        .gallery-container {
+      display: flex;
+      gap: 10px; /* Espacement entre les images */
+      overflow: hidden; /* Évite le débordement */
+    }
+    .gallery-container img {
+      height: 250px; /* Hauteur fixe pour les images */
+      object-fit: cover; /* Ajuste le contenu des images */
+    }
 
         /* Style pour la lightbox */
         .lightbox {
@@ -172,7 +204,7 @@
                         <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6">Natation Scolaire</h1>
                         <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
                       </div>
-                      <div class="bg-white p-lg-4 p-3 mt-lg-7 mt-5 mx-n3" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/14.png" alt="" style="max-width:140px" />
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/14.png" alt="" style="max-width:140px" />
                         <p class="my-4">La formation des cadres techniques de la FETONAS en natation scolaire débute ce lundi 28 octobre à 8h au stade de légué.
                           Le sport scolaire socle du développement durable de toute disciplines sportive et grenier de talents pour les équipes nationales
                           L'aventure continue.</p>
@@ -202,6 +234,51 @@
               <div class="container">
                 <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
                 <!--/.bg-holder-->
+                <div class="p-xl-6 p-6">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                   
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-0">La Fédération Togolaise de Natation et de Sauvetage (FETONAS) a tenu son Assemblée Générale Élective ce jour, 23 novembre 2024. À cette occasion, M. DAOU Essonana a été réélu par acclamation par l'ensemble des délégués.  
+                          Il continuera à diriger la Fédération pour les quatre prochaines années, entouré d'une équipe engagée et motivée. Nous souhaitons bon vent au nouveau bureau pour la réussite de sa mission au service du développement de la natation et du sauvetage au Togo.  
+                          Merci pour votre soutien constant !</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+                    <!-- Colonne pour les images -->
+                    <div class="col-lg-7">
+                      <div class="row g-3 image-container">
+                        <div class="col-6">
+                          <img src="Galeries/content/E1.jpg" class="img-fluid" alt="Image Olympique">
+                        </div>
+                        <div class="col-6">
+                          <img src="Galeries/content/E2.jpg" class="img-fluid" alt="Image Natation">
+                        </div>
+                        <div class="col-6">
+                          <img src="Galeries/content/E3.jpg" class="img-fluid" alt="Image Olympique">
+                        </div>
+                        <div class="col-6">
+                          <img src="Galeries/content/E4.jpg" class="img-fluid" alt="Image Natation">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
                 <div class="p-xl-6 p-4">
                   <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
                     <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
@@ -209,7 +286,7 @@
                         <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6">Jeux Olympique</h1>
                         <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
                       </div>
-                      <div class="bg-white p-lg-4 p-3 mt-lg-7 mt-5 mx-n3" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
                         <p class="my-4">Enfin le grand jour.. Nos deux porte-flambeaux Magnim Jordano Daou et Adèle Gaitou s'envoleront dans quelques jours pour représenter et défendre les couleurs du Togo au JO de Paris 2024. Nos espoirs de médailles sont réels puisque le Président de la Fetonas Mr Essonana Daou a mis tout en œuvre avec son équipe afin que nos deux athlètes soient au meilleur niveau. Nos prières les accompagnent tout au long de ce grand rendez-vous.</p>
                         <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
                           <div class="media-body">
@@ -219,26 +296,782 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xxl-8 col-lg-7">
-                      <div class="mx-n3">
-                        <div class="carousel slide carousel-fade" id="carouselExampleControls" data-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active"><img class="d-block w-100" src="Actualite/Olympique.jpg" alt="..." /></div>
-                            <div class="carousel-item"><img class="d-block w-100" src="Actualite/natation.jpg" alt="..." /></div>
-                            <div class="carousel-item"><img class="d-block w-100" src="Actualite/Olympique.jpg" alt="..." /></div>
-                          </div><a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                        </div>
-                      </div>
-                      <div class="row mt-4">
-                        <div class="col-md-4 pl-0">
-                          
-                        </div>
-                      </div>
-                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Actualite/Olympique.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Actualite/natation.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Actualite/Olympique.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Actualite/natation.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
                   </div>
                 </div>
               </div>
             </section>
+
+
+
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                     
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Fin ce vendredi 1er novembre 2024 de la formation des cadres technique en natation scolaire
+                          Les stagiaires sont content et reconnaissants pour cette opportunité d'apprendre et de renforcer leur compétences
+                          Une réforme d'envergure se prépare en matière de natation scolaire et cette formation marque les fondation.
+                          Notons le passage de Monsieur Yan au ministère des sports et loisir pour présenté au côté du président de la FETONAS ce projet ambitieux mais d'intérêt public.
+                          Notons aussi la présence du Maire de la commune d'Ave 2 pour la cérémonie de clôture et la remise des diplômes au stagiaires.
+                          Merci à tous et à toutes</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/A1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/A3.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/A2.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/A4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/A5.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/A6.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+                
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+
+            
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">ASSEMBLEE GENERALE EXTRAORDINAIRE DE LA  FETONAS*
+                          L'Assemblée Générale Extraordinaire de la Fédération Togolaise de Natation et de Sauvetage (FETONAS) s'est tenue ce 19 octobre 2024 à kégué avec la présence de 16 clubs sur les 17 affiliés, en présence de représentants du Ministère des Sports et Loisirs, notamment le Directeur National des Sports et de l'Éducation Physique ainsi que le Point Focal chargé de la FETONAS.
+                          Deux points essentiels ont été soumis à l’appréciation des membres de l'Assemblée :
+                          1. Pour ou contre la scission de la FETONAS 
+                          2. Pour ou contre le changement d'objet dans les statuts de la FETONAS, une proposition émise par le Ministère des Sports.
+                          Après délibération, l'ensemble des 16 clubs présents a voté contre la scission de la FETONAS et contre toute modification des statuts portant sur le changement d’objet 
+                          Cette décision a été prise à l'unanimité et l'Assemblée Générale assume pleinement ce choix.
+                          En marge de cette session, l'Assemblée a également profité de l'occasion pour rendre hommage à M. KPOSSI, ancien président de la FETONAS, en lui remettant le diplôme d'honneur de Président Honoraire à Vie. Ce titre honorifique a été décerné en reconnaissance de son engagement et des sacrifices consentis pour le développement de la natation et du sauvetage au Togo.
+                          L'Assemblée a clos ses travaux dans un esprit d'unité et de renforcement de l'engagement envers la promotion de la natation et du sauvetage dans le pays</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/W1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/W2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/W3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/W4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+
+
+
+             
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                   
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Le Togo participera aux Championnats de Natation Zone 2 d'Afrique Aquatique, qui se tiendront du 7 au 9 octobre 2024 à Accra, au Ghana. Cet événement regroupera trois compétitions majeures : le 1er championnat de natation maîtres, le 9e championnat de natation senior et le 4e championnat de natation junior. 
+                          Le Togo sera représenté par une délégation d'athlètes juniors et seniors, prêts à se mesurer aux meilleurs nageurs de la sous-région ouest-africaine. Cette participation revêt une importance particulière pour les nageurs togolais, leur offrant une opportunité unique de tester leur niveau de préparation, de renforcer leur expérience internationale et de viser des performances de haut niveau face à une compétition relevée. Ces championnats représentent également une étape clé dans le développement de la natation togolaise, qui continue de progresser sur la scène africaine</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/Q1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="">
+                     
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Départ de la délégation togolaise pour les championnats d'Afrique de natation de la zone 2.
+                          Force et courage à nos ambassadeurs.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/X1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Célébration hier à la résidence de France de la fin des Jeux Olympiques et Paralympiques de Paris 2024 avec l'ensemble des athlètes togolais, en compagnie de son Excellence Augustin FAVEREAU, Ambassadeur de France au Togo et du Président de la Fetonas Mr Essonana Daou.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/L1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/L2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/L3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/L4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                      
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Bonne nouvelle pour le Togo à l’Académie Africaine de Sauvetage (AAS) 
+                          En effet, à l’issue de l’assemblée générale du Conseil d’Administration de  l'AAS, qui a eu lieu ce mercredi 21 aout 2024 à Rabat au Royaume du Maroc, le Président de la Fédération Togolaise de Natation et de Sauvetage (FETONAS) Monsieur Essonana DAOU a été élu par ses pairs 2ème Vice –Président de cette institution internationale qui compte au sein de ses membres 20 pays dont le Togo.
+                          Joint au téléphone Monsieur Daou s’est montré très ému pour son élection et pour le choix de son pays le Togo qui. arbitrera les prochains ateliers de formations  de cette organisation panafricaine. « J’avoue que je suis doublement ému. Emu pour notre élection au poste de 2ème vice-président, et aussi pour le choix de mon Pays le Togo. Un choix qui a été fait à l’unanimité de l’ensemble des représentants des 20 Pays. La diplomatie agissante de nos premières autorités pour la paix dans la sous-région en est sans nul doute un facteur prépondérant.  Je leur suis très reconnaissant. Notre récent championnat de sauvetage organisé à Lomé a aussi mis en exergue les activités de notre jeune fédération. A présent nous sommes appelés à nous mobiliser pour une bonne réussite de l’organisation du rendez-vous de Lomé » a conclu le Président.
+                          La rédaction JA</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/D1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/D2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/D3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                      
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Fin ce samedi du stage de formation et de recyclage de surveillants de baignades et des maîtres nageurs sauveteurs.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/F1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/F2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/F3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/F4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                  
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">#JOParis2024 #Fetonas.... Notre champion Magnime Jordano Daou occupe la troisième place avec un chrono de 26"56.5 24. Sur le classement mondial il est 58ème et 10ème sur le plan Africain au 50.m nage libre. Au bout de l'effort, les médailles. Le travail continue.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/T1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/T2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/T3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/T4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Une fois n'est pas coutume. Disons le donc haut et fort. Depuis la prise de fonction du nouveau Président de la Fetonas Mr Essonana Daou et de sa nouvelle équipe mise en place, la Fédération togolaise de natation et de sauvetage a retrouvé ses lettres de noblesse. Après le Pérou, l'Allemagne, l'Australie, le Japon, l'Angola etc , qui ont permis à nos différents athlètes de tutoyer le haut niveau, voici donc les JO de Paris 2024 pour couronner deux années de travail acharné et laborieux. Les images parlent elles-mêmes. Nos différents athlètes sont fin prêts avec des espoirs de médailles.Un grand merci au gouvernement togolais, au ministère des sports et des loisirs, au Cnot et à toute l'équipe de la Fetonas pour le travail abattu.#JoParis2024, "Here we are." Bon vent à nos athlètes.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/S1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/S2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/S3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/S4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/S5.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/S6.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+            
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                     
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Enfin le grand jour.. Nos deux porte-flambeaux Magnim Jordano Daou et Adèle Gaitou s'envoleront dans quelques jours pour représenter et défendre les couleurs du Togo au JO de Paris 2024. Nos espoirs de médailles sont réels puisque le Président de la Fetonas Mr Essonana Daou a mis tout en œuvre avec son équipe afin que nos deux athlètes soient au meilleur niveau. Nos prières les accompagnent tout au long de ce grand rendez-vous..</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/C1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/C2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                 
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                      
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Apothéose du championnat National de Sauvetage 2024 du Togo</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/V1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/V2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/V3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/V4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/V5.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/V6.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                      
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Samedi 04 mai 2024, en marge des 16èmes championnats d'Afrique de natation à Luanda dans la capitale angolaise, les responsables des différentes fédérations africaines de natation en présence du Président de la World Aquatics ont procédé au choix du nouveau Président de l'Africa Aquatics. Avec 61% de voix, le  Dr Mohamed Diop, d'origine sénégalaise a été élu nouveau Président d'Africa Aquatics. Il remplace à ce poste le sud africain Sam Ramsamy qui a dirigé la CANA pendant des années. Le nouveau Président de l'AA en compagnie du Président de la Fetonas Mr Essonana Daou. Nous lui souhaitons bon vent</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/K1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/K2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/K3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/K4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6"></h1>
+                        <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Quelques images de nos représentants en Angola en attendant la compétition..</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/Y1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/Y2.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/Y3.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  <div class="col-6">
+                    <img src="Galeries/content/Y4.jpg" class="img-fluid" alt="Image Natation">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6"></h1>
+                        <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Dernière ligne droite avant les JO de Paris 2024. Les 3 espoirs de médailles togolaises Marie AMENOU, Magnim Jordano DAOU, Adèle GAITOU feront le déplacement cette semaine à Luanda en Angola afin d'affronter les meilleurs du continent et confirmer leur meilleure forme cet été à Paris. Ce déplacement sera le dernier test de nos trois représentants pour améliorer leurs temps et justifier la confiance que le Président de la #Fetonas a placée en eux</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/U1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6"></h1>
+                        <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">Championnats mondiaux de natation Doha 2024. Dernier virage avant Paris. Le Togo dans les starting-blocks avec deux espoirs de médailles de la natation togolaise, Adèle Gaitou qui évolue à Brazzaville au Congo et Magnim Jordano Daou qui évolue en Thaïlande . En filigrane, les JO de Paris 2024 que le Président de la Fetonas Mr Essonana Daou prépare activement afin de relever le défi d'une montée du Togo sur le podium.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/Oq1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                 
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="">
+                    
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">On ne pleure pas les années qui meurent, on fête  celles qui naissent parce qu'elles sont chargées  d'espérance qui fonde ce qui peut durer et porter des fruits même s'il faut à ceux-ci du temps pour croître et mûrir. Janvier 2024 vient de remplacer Décembre 2023. A cette occasion il me plaît d'adresser mes meilleurs vœux de santé , de bonheur, de prospérité , de longévité et de réussite, à tous les membres et sympathisants de la #Fetonas. Bonne et heureuse année 2024 à tous !!!! Le Président Mr Essonana Daou</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/H1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+            <section class="pt-0">
+              <div class="container">
+                <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-3-sec.jpg);background-size:cover;"></div>
+                <!--/.bg-holder-->
+                <div class="p-xl-6 p-4">
+                  <div class="row justify-content-between" data-zanim-timeline="{&quot;delay&quot;:0}" data-zanim-trigger="scroll">
+                    <div class="col-xxl-3 col-lg-4 mb-5 mb-lg-0">
+                      <div class="mx-n3">
+                        <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6"></h1>
+                        <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
+                      </div>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/6.png" alt="" style="max-width:140px" />
+                        <p class="my-4">toujours dans une dynamique de formation et d'excellence, la #FETONAS  sous l'impulsion de son Président Mr Essonana Daou organise en partenariat avec la World Aquatics , l'Africa Aquatics , le Ministère des sports et des loisirs, le CNOT, la formation des entraîneurs de natation en eau libre Niveau 1. Cette formation débutera du 16 au 21 octobre 2023 à Lomé avec Mr Maurice Brunet, Expert de la World Aquatics spécialement dépêché au Togo.</p>
+                        <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img2.jpg" width="48" alt="" />
+                          <div class="media-body">
+                            <p class="mb-0 font-weight-bold"></p>
+                            <p class="font-weight-semi-bold mb-0 text-uppercase fs--1 ls text-600"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+              <!-- Colonne pour les images -->
+              <div class="col-lg-7">
+                <div class="row g-3 image-container">
+                  <div class="col-6">
+                    <img src="Galeries/content/P1.jpg" class="img-fluid" alt="Image Olympique">
+                  </div>
+                  
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
             <section class="pt-0">
               <div class="container">
                 <div class="bg-holder" style="background-image:url(assets/img/gallery/bg-img-4-sec.jpg);background-size:cover;"></div>
@@ -250,8 +1083,8 @@
                         <h1 class="display-1 fs-xl-8 fs-lg-7 fs-6">Championnat national de natation</h1>
                         <p class="font-weight-semi-bold fs-1 font-weight-semi-bold fs-1"></p>
                       </div>
-                      <div class="bg-white p-lg-4 p-3 mt-lg-7 mt-5 mx-n3" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/14.png" alt="" style="max-width:140px" />
-                        <p class="my-4"></p>
+                      <div class="" data-zanim-xs='{"delay":0.4,"duration":1}'><img class="img-fluid" src="assets/img/logos/14.png" alt="" style="max-width:140px" />
+                        <p class="my-4">La Fédération Togolaise de Natation et de Sauvetage présente le Championnat National de Natation Édition 2023, ces 28 et 29 octobre à l'hôtel Sarakawa</p>
                         <div class="media"><img class="img-fluid rounded-circle mr-3" src="assets/img/team/qouta-avatar-img3.jpg" width="48" alt="" />
                           <div class="media-body">
                             <p class="mb-0 font-weight-bold"></p>
@@ -276,15 +1109,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+            <button id="btnRetourHaut" title="Retour en haut">&uarr;</button>
 
             <div class="gallery-container ph">
               <!-- Les images sont ajoutées dynamiquement -->
@@ -438,6 +1263,27 @@
             document.getElementById('lightbox').style.display = 'none';
         }
     </script>
+      <script>
+        // Sélectionne le bouton
+        const btnRetourHaut = document.getElementById("btnRetourHaut");
+    
+        // Affiche la flèche lorsque l'utilisateur descend de 200px
+        window.onscroll = function () {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btnRetourHaut.style.display = "block"; // Affiche le bouton
+          } else {
+            btnRetourHaut.style.display = "none"; // Cache le bouton
+          }
+        };
+    
+        // Fait remonter la page au clic sur le bouton
+        btnRetourHaut.onclick = function () {
+          window.scrollTo({
+            top: 0, // Position tout en haut
+            behavior: "smooth" // Défilement fluide
+          });
+        };
+      </script>
   </body>
 
 

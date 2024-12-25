@@ -2,8 +2,8 @@
 <html data-bs-theme="light" lang="en-US" dir="ltr">
 
   
-<!-- Mirrored from prium.github.io/Baikal-v2/v3.0.0/about/what-we-do.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 10:00:39 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,30 @@
     <link href="assets/css/theme.min.css" rel="stylesheet" />
     <link href="assets/css/user.min.css" rel="stylesheet" />
     <style>
+
+#btnRetourHaut {
+      position: fixed; /* Position fixe pour toujours rester visible */
+      bottom: 30px; /* Distance depuis le bas de la fenêtre */
+      right: 30px; /* Distance depuis le côté droit */
+      background-color: #007bff; /* Couleur de fond */
+      color: white; /* Couleur de la flèche */
+      border: none; /* Pas de bordure */
+      border-radius: 50%; /* Rend le bouton circulaire */
+      width: 50px; /* Largeur */
+      height: 50px; /* Hauteur */
+      font-size: 24px; /* Taille de la flèche */
+      text-align: center; /* Centre le contenu */
+      line-height: 50px; /* Aligne verticalement */
+      cursor: pointer; /* Curseur pointeur */
+      display: none; /* Caché par défaut */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease-in-out;
+    }
+    #btnRetourHaut:hover {
+      background-color: #0056b3; /* Changement de couleur au survol */
+    }
+
+
       .MiseEnPage{
         padding: 20px;
       }
@@ -153,10 +177,13 @@
       color: #007bff;
       font-weight: bold;
     }
+
+    
     </style>
   </head>
 
   <body>
+    
     <!-- ===============================================--><!--    Main Content--><!-- ===============================================-->
     <main class="main" id="top" data-zanim-timeline="{}" data-zanim-trigger="scroll">
       <div class="min-vh-100 d-flex flex-center bg-black w-100 position-fixed" id="preloader">
@@ -201,12 +228,30 @@
 
            <!-- <section> A propos begin ============================-->
             <section class="pt-10 pb-11" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll" id="secondSection">
+             
+
               <div class="container">
+                <p><h3>A propos</h3></p>
+                <h1>Bienvenue sur le site officiel de la Fédération Togolaise de Natation et de Sauvetage (FETONAS)</h1>
+
+                <p>Au cœur de l'essor de la natation et du sauvetage au Togo, la FETONAS œuvre avec passion pour promouvoir les sports aquatiques, renforcer les compétences en sauvetage et soutenir l'épanouissement des athlètes de tous âges et niveaux. Que ce soit à travers nos programmes de formation, nos compétitions nationales et internationales, ou nos actions de sensibilisation, notre engagement vise à développer une culture de l’excellence, du fair-play et de la sécurité aquatique.</p>
+                <p>Grâce à une équipe dévouée et aux partenariats avec des organisations sportives locales et internationales, nous encourageons chaque Togolais à découvrir les bienfaits de la natation, que ce soit pour le loisir, la compétition ou pour apprendre les techniques de sauvetage. Nous aspirons à offrir aux athlètes et aux entraîneurs des opportunités de formation de qualité, pour les préparer aux plus grands défis sportifs, notamment les Jeux Olympiques et les championnats internationaux.</p>
+                <p>Explorez notre site pour en savoir plus sur nos initiatives, nos événements à venir, et nos services pour faire de la natation un sport accessible et inspirant pour tous au Togo. Rejoignez-nous dans cette aventure aquatique, et ensemble, faisons des vagues vers un avenir prometteur !</p>
+                <div class="telechargement">
+                  <div class="download-container">
+                    <!-- Bouton de téléchargement -->
+                    <a href="documents/DOCUMENT COMPLET.pdf" download="DOCUMENT COMPLET.pdf">
+                      <button>Télécharger le fichier de Statuts et Reglement Interieur</button>
+                    </a>
+                    
+                  </div>
+                 </div>
+              
                 <div class="row justify-content-center">
                   <div class="col-lg col-10 order-lg-1 order-md-0" data-zanim-xs='{"delay":0.6,"duration":1.5}'>
                     <div class="position-relative">
-                      <h1 class="font-weight-medium fs-xl-5 fs-sm-4 fs-3 heading-big-shape-right"><span class="position-relative">A propos<span class="heading-shapes heading-shapes-right" style="background-image: url(assets/img/illustrations/shapes-13.png); height: 80px; width: 90px"></span></span><br /></h1>
-                      <p class="text-900 mt-4 w-lg-75">La Fédération Togolaise de Natation et de Sauvetage (Fétonas) est l'organisme officiel chargé de la promotion et du développement de la natation et des activités de sauvetage au Togo. Basée à Lomé, elle organise régulièrement des événements, des compétitions et des sessions de formation pour encourager la pratique de la natation et assurer la sécurité aquatique.</p>
+                      <!-- <h1 class="font-weight-medium fs-xl-5 fs-sm-4 fs-3 heading-big-shape-right"><span class="position-relative">A propos<span class="heading-shapes heading-shapes-right" style="background-image: url(assets/img/illustrations/shapes-13.png); height: 80px; width: 90px"></span></span><br /></h1> -->
+                      <p class="text-900 mt-4 w-lg-75"></p>
                       <div class="row">
                         <div class="col-xxl col-xl-11 col-md-10"><img class="position-absolute d-none d-md-block b-0" src="img/illustrations/about-side-shape.png" alt="" style="width:41%;right:-19%;" /><img class="img-fluid rounded-soft mt-6 position-relative" src="FETONAS-Image/N5.jpg" alt="" /></div>
                       </div>
@@ -224,12 +269,7 @@
 
 
               <div class="MiseEnPage">
-                <h1>Bienvenue sur le site officiel de la Fédération Togolaise de Natation et de Sauvetage (FETONAS)</h1>
-
-  <p>Au cœur de l'essor de la natation et du sauvetage au Togo, la FETONAS œuvre avec passion pour promouvoir les sports aquatiques, renforcer les compétences en sauvetage et soutenir l'épanouissement des athlètes de tous âges et niveaux. Que ce soit à travers nos programmes de formation, nos compétitions nationales et internationales, ou nos actions de sensibilisation, notre engagement vise à développer une culture de l’excellence, du fair-play et de la sécurité aquatique.</p>
-  <p>Grâce à une équipe dévouée et aux partenariats avec des organisations sportives locales et internationales, nous encourageons chaque Togolais à découvrir les bienfaits de la natation, que ce soit pour le loisir, la compétition ou pour apprendre les techniques de sauvetage. Nous aspirons à offrir aux athlètes et aux entraîneurs des opportunités de formation de qualité, pour les préparer aux plus grands défis sportifs, notamment les Jeux Olympiques et les championnats internationaux.</p>
-  <p>Explorez notre site pour en savoir plus sur nos initiatives, nos événements à venir, et nos services pour faire de la natation un sport accessible et inspirant pour tous au Togo. Rejoignez-nous dans cette aventure aquatique, et ensemble, faisons des vagues vers un avenir prometteur !</p>
-
+               
   <h1>Histoire de la Natation et du Sauvetage au Togo</h1>
 
   <div class="section">
@@ -285,20 +325,24 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>DAOU Essonana</td>
+                    <td>Essonana DAOU</td>
                     <td>Président FETONAS</td>
                   </tr>
                   <tr>
-                    <td>EGBARE Aklesso Koffi</td>
-                    <td>Vice-Président</td>
+                    <td>KOBLI Akpénè Epse DOSSEH </td>
+                    <td>Vice-président chargé de la natation </td>
                   </tr>
                   <tr>
-                    <td>GBADAMASSI Abdou Gafarou</td>
-                    <td>Vice-Président</td>
+                    <td>ABELE Gnimtalounani</td>
+                    <td>Vice-président chargé du sauvetage </td>
                   </tr>
                   <tr>
-                    <td>AWOUZOUBA Wiyao</td>
+                    <td>AWOUZOUBA Wiyao</td> 
                     <td>Secrétaire Général</td>
+                  </tr>
+                  <tr>
+                    <td>PLIZIWE Essodanam</td>   
+                    <td>Secrétaire général adjoint</td>
                   </tr>
                   <tr>
                     <td>OKOUDISSA Yawa Maria</td>
@@ -306,14 +350,10 @@
                   </tr>
                   <tr>
                     <td>KPATCHA Pazimassoué</td>
-                    <td>Trésorier Général Adjoint</td>
-                  </tr>
+                    <td>Trésorier Général Adjoint</td> 
+                  </tr> 
                   <tr>
-                    <td>AMEGASHIE Atsou Patrick</td>
-                    <td>Président de la commission des athlètes</td>
-                  </tr>
-                  <tr>
-                    <td>KOMLAMBIGUE Dambé</td>
+                    <td>EGBARE Aklesso Koffi</td>
                     <td>Conseiller</td>
                   </tr>
                 </tbody>
@@ -343,6 +383,13 @@
                   <tr><td>TRICAL CLUB DE HAHOTOE</td></tr>
                   <tr><td>MIMBA LA LICORNE</td></tr>
                   <tr><td>DAUPHINS BLEU</td></tr>
+                  <tr><td>FORCE AQUATIQUE DE LOME (FAL)</td></tr>
+                  <tr><td>NATATION POUR TOUS TOGO (NTT)</td></tr>
+                  <tr><td>CLUB ESPERANCE DU GOLFE (CEG)</td></tr>
+                  <tr><td>CHAMPION SWIMMING CLUB (CSC)</td></tr>
+                  <tr><td>ASSOCIATION TOGOLAISE DE SAUVETAGE ET DE SECOURISME (ATSS) </td></tr>
+                  <tr><td>LES POUSSINETS </td></tr>
+
                 </tbody>
               </table>
   
@@ -375,6 +422,7 @@
 
 
             <!-- ============================================-->
+           
 
            <div class="telechargement">
             <div class="download-container">
@@ -410,14 +458,14 @@
                     </div>
                     <div class="media mt-1"><span class="fas fa-envelope mr-3 mt-1 text-danger" data-fa-transform="down-2"></span>
                       <div class="media-body">
-                        <p class="text-600 mb-0">contact@fetonas.org</p>
+                        <p class="text-600 mb-0">togofetonas@gmail.com</p>
                       
                       </div>
                     </div>
                   </div>
                   <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-8 col-10 text-center mt-5 mt-lg-0" data-zanim-lg='{"animation":"slide-left","delay":0.8,"duration":1.5}' data-zanim-xs='{"delay":0.7,"duration":1.5}'>
                     <h4 class="text-white">s'abonner au actualités</h4>
-                    <p class="text-500 mt-4">Latest Shape news, articles, and resources sent straight to your inbox every month.</p>
+                    
                     <form class="mailbluster-subscribe">
                       <div class="mailbluster-feedback"></div>
                       <div class="form-group row"><input class="form-control form-control-sm" id="colFormLabelSm" type="email" name="email" placeholder="Your Email" /><button class="btn btn-block btn-sm mt-3 btn-primary" type="submit">S'abonner</button>
@@ -439,10 +487,11 @@
       <div class="container">
         <div class="row border-top">
           <div class="col px-sm-0 py-4">
-            <p class="mb-0">&copy; 2024 <a class="text-body font-weight-bold" href="#" target="_blank">FETOMAS</a>,  .All rights reserved</p>
+            <p class="mb-0">&copy; 2024 <a class="text-body font-weight-bold" href="#" target="_blank">FETOMAS</a>  .All rights reserved</p>
           </div>
         </div>
       </div>
+      <button id="btnRetourHaut" title="Retour en haut">&uarr;</button>
     </footer>
 
 
@@ -459,8 +508,29 @@
     <script src="vendors/gsap/customEase.js"></script>
     <script src="vendors/gsap/drawSVGPlugin.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+      // Sélectionne le bouton
+      const btnRetourHaut = document.getElementById("btnRetourHaut");
+  
+      // Affiche la flèche lorsque l'utilisateur descend de 200px
+      window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          btnRetourHaut.style.display = "block"; // Affiche le bouton
+        } else {
+          btnRetourHaut.style.display = "none"; // Cache le bouton
+        }
+      };
+  
+      // Fait remonter la page au clic sur le bouton
+      btnRetourHaut.onclick = function () {
+        window.scrollTo({
+          top: 0, // Position tout en haut
+          behavior: "smooth" // Défilement fluide
+        });
+      };
+    </script>
   </body>
 
 
-<!-- Mirrored from prium.github.io/Baikal-v2/v3.0.0/about/what-we-do.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Oct 2024 10:00:40 GMT -->
+
 </html>
